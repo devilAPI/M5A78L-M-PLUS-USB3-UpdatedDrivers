@@ -1,0 +1,198 @@
+#############################################################
+## This will contain all of the supported Install Packages ##
+##                                                         ##
+## The format is as follows:                               ##
+## [Package Type];[Name]=[Value]                           ##
+## [Package Type] is be value from PackageType.dat         ##
+#############################################################
+
+#None == NA
+000;None=000
+
+#All Drivers, append 001 to link to drivers category
+001;Display Drivers=001
+001;Windows Device Module=002
+001;Windows Device Module for AMD64=003
+001;South Bridge Drivers=004
+001;North Bridge Drivers=005
+001;HydraVision=006
+001;3D StudioMax FireGL=007
+001;Remote Wonder=008
+001;Remote Wonder USB Drivers=009
+001;TV Wonder USB2 Drivers=010
+001;TV Wonder Capture Drivers=011
+001;HydraVisionLE=012
+001;IDE Driver=013
+001;Audio Driver=014
+001;IDEATA133 Driver=015
+001;Silicon Image SATA RAID Driver=016
+001;ATI T200 Unified AVStream Driver=017
+001;ATI Unified AVStream Driver=018
+001;NSP Driver=019
+001;RIO Driver=020
+001;LIMA Driver=021
+001;PCI bus filter Driver =022
+001;Promise SATA RAID Driver=023
+001;LIMA USB Driver=024
+001;North Bridge Filter Drivers=025
+001;South Bridge Filter Drivers=026
+001;ATI TV Wonder Pro Drivers=027
+001;ATI TV Wonder 200 USB2.0 Drivers=028
+001;ATI TV Wonder 200 USB2.0 Tuner Drivers=029
+001;ATI SB600/700 IDE Drivers=030
+001;AMD SB700 HyperFlash Driver=031
+001;AMD SB700 HyperFlash Control Panel=032
+001;AMD SB700 CIR Driver=033
+001;Theater ISDB-T Driver=034
+001;AMD AHCI compatible SATA RAID Driver for SB700=035
+001;AMD Driver Support for HP 3D DriveGuard on SB700=036
+001;PX Profile Update=037
+001;AIW RIO Driver=038
+001;HDAudio Driver=039
+001;DTV Wonder=040
+001;ATI ehome Wonder=041
+001;Integrated Network Driver=042
+001;RAID7xx Drivers=043
+001;SMBus Driver=044
+001;MiniIDE Driver=045
+001;AMD SATA AHCI Driver=046
+001;NULL Driver for AMD IOMMU Devices=047
+001;RAID8xx Drivers=048
+
+#All Applications, append 004 to link to application category
+002;Catylist Control Center=001
+002;Multi-Media Center=002
+002;Control Panel=003
+002;Problem Report=004
+002;Catalyst Control Center Ex Core-Static=005
+002;Catalyst Control Center Ex Core-Implement=006
+002;Catalyst Control Center Ex Graphics-Full-Existing=007
+002;Catalyst Control Center Ex Graphics-Full-New=008
+002;Catalyst Control Center Ex Graphics-Light=009
+002;Catalyst Control Center Ex Graphics-Previews-Common=010
+002;Catalyst Control Center Ex Graphics-Previews-Vista=011
+002;Catalyst Control Center Ex Graphics-Previews-XP2K=012
+002;Catalyst Control Center Ex Graphics-SDK=013
+002;Catalyst Control Center Ex Help AR=014 
+002;Catalyst Control Center Ex Help CS=015
+002;Catalyst Control Center Ex Help DA=016
+002;Catalyst Control Center Ex Help DE=017
+002;Catalyst Control Center Ex Help EL=018
+002;Catalyst Control Center Ex Help EN-US=019
+002;Catalyst Control Center Ex Help ES=020
+002;Catalyst Control Center Ex Help FI=021
+002;Catalyst Control Center Ex Help FR=022
+002;Catalyst Control Center Ex Help HE=023
+002;Catalyst Control Center Ex Help HU=024
+002;Catalyst Control Center Ex Help IT=025
+002;Catalyst Control Center Ex Help JA=026
+002;Catalyst Control Center Ex Help KO=027
+002;Catalyst Control Center Ex Help NL=028
+002;Catalyst Control Center Ex Help NO=029
+002;Catalyst Control Center Ex Help PL=030
+002;Catalyst Control Center Ex Help PT-BR=031
+002;Catalyst Control Center Ex Help RU=032
+002;Catalyst Control Center Ex Help SV=033
+002;Catalyst Control Center Ex Help TH=034
+002;Catalyst Control Center Ex Help ZH-CHS=035
+002;Catalyst Control Center Ex Help ZH-CHT=036
+002;Catalyst Control Center Ex Localization AR=037
+002;Catalyst Control Center Ex Localization CS=038
+002;Catalyst Control Center Ex Localization DA=039
+002;Catalyst Control Center Ex Localization DE=040
+002;Catalyst Control Center Ex Localization EL=041
+002;Catalyst Control Center Ex Localization ES=042
+002;Catalyst Control Center Ex Localization FI=043
+002;Catalyst Control Center Ex Localization FR=044
+002;Catalyst Control Center Ex Localization HE=045
+002;Catalyst Control Center Ex Localization HU=046
+002;Catalyst Control Center Ex Localization IT=047
+002;Catalyst Control Center Ex Localization JA=048
+002;Catalyst Control Center Ex Localization KO=049
+002;Catalyst Control Center Ex Localization NL=050
+002;Catalyst Control Center Ex Localization NO=051
+002;Catalyst Control Center Ex Localization PL=052
+002;Catalyst Control Center Ex Localization PT-BR=053
+002;Catalyst Control Center Ex Localization RU=054
+002;Catalyst Control Center Ex Localization SV=055
+002;Catalyst Control Center Ex Localization TH=056
+002;Catalyst Control Center Ex Localization TR=057
+002;Catalyst Control Center Ex Localization ZH-CHS=058
+002;Catalyst Control Center Ex Localization ZH-CHT=059
+002;Catalyst Control Center Ex Help TR=060
+002;Catalyst Control Center EX Branding=070
+002;Catalyst Control Center Skins=071
+002;Catalyst Control Center Utility=072
+002;Catalyst Control Center Utility64=073
+002;Catalyst Control Center Update=074
+002;Catalyst Control Center PreInstall=075
+002;Catalyst Control Center Testing=76
+002;Catalyst Control Center HydraVision Full=77
+002;Catalyst Control Center PowerXpressHybrid=78
+002;Catalyst Control Center MOM-InstallProxy=079
+002;Catalyst Control Center All Languages=080
+
+002;MovieMakerAddon=100
+002;TVT7Diag=101
+002;Presentation Director Interface=102
+002;Steam Shortcut =103
+002;Product Registration=104
+002;Enable Aero=105
+002;HydraVision Ultra Light=106
+002;Product Survey=107
+002;SBDPU=108
+002;RCU=109
+002;AccFilter=110
+002;AMD USB Audio Filter Driver=111
+002;Blizzard Shortcut=112
+002;PromiseFilter=113
+002;MCE Transcoder=114
+002;Problem Report Wizard=115
+002;ATI Stream SDK=116
+002;AMD Drag and Drop Transcoding=117
+002;3DS Max Maximum driver=118
+002;ATI Stream SDK Developer=119
+002;ATI Stream SDK Samples=120
+002;ATI Application Profiles=121
+002;ATI Stream Profiler=122
+002;Turbine Shortcut=123
+
+
+#All Monet Install, append 003 to link to monet category
+003;Download Manager=001
+003;Install Manager=002
+003;CIM OEM Customization=003
+
+#All Decoders, append 004 to link to decoders category
+004;Decoders=001
+
+#All Encoders, append 005 to link to encoders category
+005;Encoders=001
+005;MMC Encoder WinMCE=002
+005;Windows Media Encoders=003
+005;MCE Encoder=004
+
+#All 3rd Parties, append 006 to link to 3rd party category
+006;Unify Componet Installer=001
+006;CyberEPG=002
+006;SAS=003
+006;DOA=004
+006;MDAC=005
+006;DirectX=006
+006;DotNet=007
+006;VC8x86 RT=008
+006;VC8x64 RT=009
+006;WebPAM=010
+006;CMC=011
+006;TV Wonder 600 USB=012
+006;RAIDXpert=013
+006;ATIPCE=014
+006;RAIDXpert_SB8xx=015
+
+#All ExecCmd, append 007 to link to ExecCmd category
+007;DX10 QFE x86=001
+007;DX10 QFE x64=002
+007;Steam =003
+007;SB USB2 QFE x86=004
+007;SB USB2 QFE x64=005
+

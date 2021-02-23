@@ -1,0 +1,87 @@
+; AtiPcie.inf
+; Copyright © Advanced Micro Devices, Inc.  All rights reserved.
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%AMD%
+DriverVer=08/24/2009,1.3.2.54
+CatalogFile=Atipcie.cat
+
+;[ClassInstall32]
+;AddReg=system_class_addreg
+
+;[system_class_addreg]
+;HKR,,,,%SystemClassName%
+;HKR,,Icon,,"-27"
+
+[DestinationDirs]
+Drivers_Dir = 12
+
+[SourceDisksNames]
+1 = %DISK_NAME%,,,""
+
+
+
+[SourceDisksFiles]
+atipcie.sys  = 1,,
+
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%AMD%=PCIE_3GIO,NTx86
+
+
+[PCIE_3GIO.NTx86]
+%PCI\ATIPCIE.DeviceDesc%=ATIPCIE_Install, *pnp0a03
+
+
+;==============================================================================
+;			32-bit NT Driver
+;==============================================================================
+
+[ATIPCIE_Install]
+Include = machine.inf				; The function driver
+Needs = PCI_DRV_ROOT				; Install section for the function driver
+
+CopyFiles=Drivers_Dir
+;Reboot
+
+[Drivers_Dir]
+AtiPcie.sys,,,2
+
+[ATIPCIE_Install.HW]
+AddReg = ATIPCIE_Filter_Reg
+
+[ATIPCIE_Filter_Reg]
+HKR,,"LowerFilters", 0x00010008,"AtiPcie"
+
+[ATIPCIE_Install.Services]
+AddService = AtiPcie,,ATIPCIE_ServiceInstallSection
+
+[ATIPCIE_ServiceInstallSection]
+DisplayName    = %ATIPCIE_svcdesc%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\AtiPcie.sys
+LoadOrderGroup = PnP Filter
+
+
+
+
+[Strings]
+AMD = "Advanced Micro Devices Inc"
+PCI\ATIPCIE.DeviceDesc = "AMD PCI Express (3GIO) Filter Driver"
+SystemClassName = "System devices"
+ATIPCIE_svcdesc = "AMD PCI Express (3GIO) Filter"
+DISK_NAME = "AMD PCI Express Install Disk"
+SPSVCINST_ASSOCSERVICE = 0x00000002
+SERVICE_KERNEL_DRIVER  = 1
+SERVICE_BOOT_START     = 0
+SERVICE_DEMAND_START   = 3
+SERVICE_ERROR_NORMAL   = 1

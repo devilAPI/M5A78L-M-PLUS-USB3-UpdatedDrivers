@@ -1,0 +1,193 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; .dat file for the ATI South Bridge component dll
+;
+; Abstract:
+; The Key value will overwrite the dll code and will be returned by the component dll.
+; Therefore, the key value should not be defined if the value is expected from the dll code.
+; The dat file (if used) should have the same prefix name of the dll file.
+; 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Component]
+;Default
+Name=South Bridge/IXP drivers
+;Arabic
+Name_ara=South Bridge/IXP drivers
+;Traditional Chinese
+Name_cht=South Bridge/IXP ÅX°Êµ{¦¡
+;Simplified Chinese
+Name_chs=South Bridge/IXP Çı¶¯³ÌĞò
+;Czech
+Name_csy=Ovladaèe South Bridge/IXP
+;Danish
+Name_dan=South Bridge/IXP-drivere
+;Dutch
+Name_nld=South Bridge/IXP-stuurprogramma's
+;English
+Name_enu=South Bridge/IXP drivers
+;Finnish
+Name_fin=South Bridge/IXP -ohjaimet
+;French
+Name_fra=Pilotes South Bridge/IXP
+;German
+Name_deu=South Bridge/IXP-Treiber
+;Greek
+Name_ell=ĞñïãñÜììáôá ïäŞãçóçò South Bridge/IXP 
+;Hebrew
+Name_heb=îğäìé äú÷ğéí ùì South Bridge/ IXP
+;Hungarian
+Name_hun=South Bridge/IXP meghajtók
+;Italian
+Name_ita=Driver South Bridge/IXP
+;Japanese
+Name_jpn=South Bridge/IXP ƒhƒ‰ƒCƒo[
+;Korean
+Name_kor=»ç¿ì½º South Bridge/IXP µå¶óÀÌ¹ö
+;Norwegian
+Name_nor=Drivere for South Bridge / IXP
+;Polish
+Name_plk=Sterowniki South Bridge/IXP
+;Portuguese
+Name_ptg=Drivers South Bridge/IXP
+;Russian
+Name_rus=Äğàéâåğû South Bridge/IXP
+;Spanish
+Name_esp=Controladores South Bridge/IXP
+;Swedish
+Name_sve=Drivrutiner för South Bridge/IXP
+;Thai
+Name_tha=ä´ÃàÇÍÃì South Bridge/IXP
+;Turkish
+Name_trk=South Bridge/IXP sürücüleri
+
+;Default
+Description=Install South Bridge/IXP drivers
+;Arabic
+Description_ara=Install South Bridge/IXP drivers
+;Traditional Chinese
+Description_cht=¦w¸Ë South Bridge/IXP ÅX°Êµ{¦¡
+;Simplified Chinese
+Description_chs=°²×° South Bridge/IXP Çı¶¯³ÌĞò
+;Czech
+Description_csy=Instalovat ovladaèe South Bridge/IXP
+;Danish
+Description_dan=Installer South Bridge/IXP-drivere
+;Dutch
+Description_nld=Installeer South Bridge/IXP-stuurprogramma's
+;English
+Description_enu=Install South Bridge/IXP drivers
+;Finnish
+Description_fin=Asenna South Bridge/IXP -ohjaimet
+;French
+Description_fra=Installer les pilotes South Bridge/IXP
+;German
+Description_deu=Installieren Sie die South Bridge/IXP-Treiber
+;Greek
+Description_ell=ÅãêáôÜóôáóç ğñïãñáììÜôùí ïäŞãçóçò South Bridge/IXP 
+;Hebrew
+Description_heb=äú÷ğú îğäìé äú÷ğéí ùì South Bridge/ IXP
+;Hungarian
+Description_hun=South Bridge/IXP meghajtók installálása
+;Italian
+Description_ita=Installare i driver South Bridge/IXP
+;Japanese
+Description_jpn=South Bridge/IXP ƒhƒ‰ƒCƒo[‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·B
+;Korean
+Description_kor=»ç¿ì½º South Bridge/IXP µå¶óÀÌ¹ö ¼³Ä¡
+;Norwegian
+Description_nor=Installer drivere for South Bridge / IXP
+;Polish
+Description_plk=Instaluj sterowniki South Bridge/IXP
+;Portuguese
+Description_ptg=Instalar os Drivers South Bridge/IXP
+;Russian
+Description_rus=Óñòàíîâêà äğàéâåğîâ South Bridge/IXP
+;Spanish
+Description_esp=Instalar Controladores South Bridge/IXP
+;Swedish
+Description_sve=Installera drivrutiner för South Bridge/IXP
+;Thai
+Description_tha=µÔ´µÑé§ä´ÃàÇÍÃì South Bridge/IXP
+;Turkish
+Description_trk=South Bridge/IXP sürücülerini kur
+
+; cds defines the path of the Component Detection Service
+CDS=..\bin
+
+;
+; Req_ASIC=<Device id 1>,<Device id 2>, ...
+; Gives the PCI device ID to check for requirement. 
+; If the ATI ASIC is found, then MeetsRequirement from the dll will return 1.
+; If the last 2 digits are 00, it means the last 2 digits are "don't care"
+; For example, R128 family - 5200; Rage PRO family - 4700
+;              Rage PRO (GB) - 4742
+;Req_ASIC=4967,496F,4136,4C64,4C66,5159,5144,5157,514C,516C,4242,4966,4C67,4C6F,496E,514F,516F,514D,516D,4E44,4145,4146,4E45,4144,4E64,4E65,4164,4336,4C59,4C57,4C58,4137,4337
+
+;
+; !Req_ASIC=<Device id 1>,<Device id 2>, ...
+; Gives the PCI device ID to check for requirement. 
+; If the ATI ASIC is found, then MeetsRequirement from the dll will return 0.
+; If the last 2 digits are 00, it means the last 2 digits are "don't care"
+; For example, R128 family - 5200; Rage PRO family - 4700
+;              Rage PRO (GB) - 4742
+;!Req_ASIC=4700
+
+;
+; Req_Capture=<Vendor id Device id 1>,<Vendor id Device id 2>, ...
+; Gives the PCI vendor and device ID to check for requirement. 
+; If the Capture ASIC is found, then MeetsRequirement from the dll will return 1.
+; If the last 2 digits are 00, it means the last 2 digits are "don't care"
+; For example, BT878 - 109e0878 (where 109e is the vendor id, 878 is the device id)
+;Req_Capture=109e0878
+
+;
+; !Req_Capture=<Vendor id Device id 1>,<Vendor id Device id 2>, ...
+; Gives the PCI vendor and device ID to check for requirement. 
+; If the Capture ASIC is found, then MeetsRequirement from the dll will return 0.
+; If the last 2 digits are 00, it means the last 2 digits are "don't care"
+; For example, BT878 - 109e0878 (where 109e is the vendor id, 878 is the device id)
+;!Req_Capture=109e0878
+
+;
+; Req_Tuner=1,NTSC,PAL,SECAM,SCART,0
+; Check if the Tuner attached has the standard required, the MeetsRequirement will return 1
+;
+;Req_Tuner=PAL,SECAM
+
+; 0=no, 1=yes
+;MeetsRequirement=1
+
+; in KB         
+Size=15000
+
+; 0, 1, 2 ... where 0 is the highest order
+Order=6
+
+; 0=no, 1=yes
+;Reboot=0
+
+; OS can be 1, WIN_95, WIN_95_OSR2_USB, WIN_98, WIN_NT351, WIN_NT4, WIN_NT5, WIN_98_GOLD
+; WIN_98_SE, WIN_ME
+OS=WIN_2K, WIN_98, WIN_NT5, WIN_98_GOLD,WIN_98_SE, WIN_ME, WIN_XP_MCE,WIN_XP,WIN_64A
+
+
+; 0=no, 1=yes
+;Visible=0                  
+
+; 0=no, 1=yes
+;WaitMessage=0               
+
+; <Comp#1>,<Comp#2>
+;ReqComp=DirectX
+
+; For display driver, we have to launch silent child install.
+InstallCommandLine=setup.exe,/K
+
+;Component Version
+Ver=2.6
+
+;Requires Uninstall before installing this component
+;UninstallComp=ATI Display Driver,ATI Video Player
+;Detect Audio
+ReqSBSMBus=1
